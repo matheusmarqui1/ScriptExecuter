@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/symfony": "^5.3",
+        "symfony/class-loader": "^3.4",
+        "phpseclib/phpseclib": "^3.0",
+        "mautic/api-library": "^3.0",
+        "egulias/email-validator": "^3.1",
+        "phpmailer/phpmailer": "^6.5"
+    },
+    "autoload": {
+        "psr-0": {"ScriptExecuter\\": "src/"}
+    }
+}

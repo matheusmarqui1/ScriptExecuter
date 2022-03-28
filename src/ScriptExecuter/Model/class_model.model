@@ -1,0 +1,16 @@
+<?php
+namespace ScriptExecuter\Scripts\{{CLASS_NAME}};
+
+Class {{CLASS_NAME}}{
+    protected $io;
+
+    public function __construct($io)
+    {
+        $this->io = $io;
+    }
+
+    public function execute(){
+        $this->io->text("Hello World!");
+    }
+}
+?>

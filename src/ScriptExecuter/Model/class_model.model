@@ -1,10 +1,11 @@
 <?php
 namespace ScriptExecuter\Scripts\{{CLASS_NAME}};
+use Symfony\Component\Console\Style\SymfonyStyle;
 
 Class {{CLASS_NAME}}{
     protected $io;
 
-    public function __construct($io)
+    public function __construct(SymfonyStyle $io)
     {
         $this->io = $io;
     }

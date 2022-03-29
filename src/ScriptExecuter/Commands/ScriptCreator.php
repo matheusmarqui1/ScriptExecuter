@@ -86,6 +86,7 @@ class ScriptCreator extends Command
     protected function createClassFile(string $className)
     {
         try {
+            if(!is_dir(self::PATH_TO_SCRIPTS)) mkdir(self::PATH_TO_SCRIPTS);
             $this->fs->mkdir($pathToClass = self::PATH_TO_SCRIPTS . $className . '/');
             if ($this->saveClassFile(
                 $pathToClass . $className . '.php',
